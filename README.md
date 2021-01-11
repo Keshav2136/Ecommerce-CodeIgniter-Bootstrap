@@ -71,6 +71,9 @@ Vendors must be enabled from /admin (administration) ->Settings->Multi-Vendor Su
 Users registration/login is added only in greenlabel template. (easily can be added to any other template, just copy files: login.php, signup.php, user.php and change your design).
 Users can track their orders history only.
 
+## Screenshot of Drones Template
+![alt text](https://github.com/Keshav2136/Ecommerce-CodeIgniter-Bootstrap/blob/master/github/drones%20template.png "Logo Title Text 1")
+
 ## Screenshots of public pages
 ![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/templates.png "Logo Title Text 1")
 
