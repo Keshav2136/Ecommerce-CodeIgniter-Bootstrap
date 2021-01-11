@@ -31,12 +31,6 @@ foreach ($all_categories as $categorie) {
 
 
 
-
-
-
-
-
-
                 <div id="top-part" class="hide-on-small">
                     <div class="container">
                         <div class="row">
@@ -152,8 +146,6 @@ foreach ($all_categories as $categorie) {
                 </div>
 
 
-
-
         <div id="wrapper">
             <div id="content">
                 <?php if ($multiVendor == 1) { ?>
@@ -178,8 +170,6 @@ foreach ($all_categories as $categorie) {
 </div></div>
 
 <br>
-
-
 
 
 
@@ -213,14 +203,6 @@ foreach ($all_categories as $categorie) {
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -406,7 +388,6 @@ if (count($sliderProducts) > 0) {
 <!--Hidden on small-->
 </div>
 <!--//END Desktop Product Grid with sidebar-->
-
 
 
 
