@@ -76,7 +76,7 @@ Users can track their orders history only.
 
 ## Screenshots of public pages
 ![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/templates.png "Logo Title Text 1")
-# Doesn't include the 'Drones' Template
+### Doesn't include the 'Drones' Template
 
 ## Screenshots of vendors pages
 ![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/vendors_pages.jpg "Logo Title Text 1")
