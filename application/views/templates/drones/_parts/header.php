@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>" />
         <link rel="stylesheet" href="<?= base_url('assets/bootstrap-select-1.12.1/bootstrap-select.min.css') ?>" />
         <link href="<?= base_url('assets/css/bootstrap-datepicker.min.css') ?>" rel="stylesheet" />
+        <link href="<?= base_url('assets/css/fpvlife.css') ?>" rel="stylesheet" />
         <link href="<?= base_url('cssloader/theme.css') ?>" rel="stylesheet" />
         <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
         <script src="<?= base_url('loadlanguage/all.js') ?>"></script>
@@ -26,11 +27,10 @@
             <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
         <?php } ?>
 
-<!--
     <title>Enjoy Flying FPV Drones | FPV Life!</title>
     <meta name="title" content="Buy and Sell FPV Drones | FPV Life!">
     <meta name="description" content="Experience the thrill of flying racing drones while chilling with your friends">
--->
+
     <meta name="theme-color" content="#ffad00">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -44,7 +44,6 @@
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
     <link href="<?= base_url('templatecss/custom.css') ?>" rel="stylesheet">
-
 
 <!-- Matomo -->
 <script type="text/javascript">
@@ -80,9 +79,7 @@
 <section class="navbar-fp">
 
   <div class="logo-fp">
-    <a href="<?= base_url() ?>">
-        <img src="<?= base_url('attachments/site_logo/' . $sitelogo) ?>" class="site-logo" alt="<?= $_SERVER['HTTP_HOST'] ?>">
-    </a>
+    <a href="<?= base_url() ?>">FPV Life</a>
   </div>
 
                             <?php if ($navitext != null) { ?>

@@ -14,19 +14,25 @@ foreach ($all_categories as $categorie) {
 }
 ?>
 
+
 <main class="showcase">
 	
 	<div class="content section section1 video-container">
 		<div class="video-container">
-			<video src="<?= base_url('template/imgs/shot.mp4') ?>" autoplay muted loop></video>
+			<video src="https://github.com/Keshav2136/Keshav2136.github.io/raw/with-fpv-web/fpv-web/shot.mp4" autoplay muted loop></video>
 		</div>
         <div class="text1 vidcontent">
         		<h1 id="fullwidth-convered" class="title homepage-heading"><span class="underline--magical">Experience</span> The Thrill Of Flying</h1>
 		</div>
-		<img src="<?= base_url('template/imgs/parrot.png') ?>" alt="demo drone">
+		<img src="https://raw.githubusercontent.com/Keshav2136/Keshav2136.github.io/with-fpv-web/fpv-web/parrot.png" alt="demo drone">
 	</div>
 
 </main>
+
+
+
+
+
 
 
 
@@ -144,6 +150,136 @@ foreach ($all_categories as $categorie) {
                         </div>
                     </div>
                 </div>
+<!--
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <?php if ($navitext != null) { ?>
+                                <a class="navbar-brand" href="<?= base_url() ?>"><?= $navitext ?></a>
+                            <?php } ?>
+                        </div>
+                        <div id="navbar" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav" style="<?= $navitext == null ? 'margin-left:-15px;' : '' ?>">
+                                <li<?= uri_string() == '' || uri_string() == MY_LANGUAGE_ABBR ? ' class="active"' : '' ?>><a href="<?= LANG_URL ?>"><?= lang('home') ?></a></li>
+                                <?php
+                                if (!empty($nonDynPages)) {
+                                    foreach ($nonDynPages as $addonPage) {
+                                        ?>
+                                        <li<?= uri_string() == $addonPage || uri_string() == MY_LANGUAGE_ABBR . '/' . $addonPage ? ' class="active"' : '' ?>><a href="<?= LANG_URL . '/' . $addonPage ?>"><?= mb_ucfirst(lang($addonPage)) ?></a></li>
+                                        <?php
+                                    }
+                                }
+                                if (!empty($dynPages)) {
+                                    foreach ($dynPages as $addonPage) {
+                                        ?>
+                                        <li<?= urldecode(uri_string()) == 'page/' . $addonPage['pname'] || uri_string() == MY_LANGUAGE_ABBR . '/' . 'page/' . $addonPage['pname'] ? ' class="active"' : ''
+                                        ?>><a href="<?= LANG_URL . '/page/' . $addonPage['pname'] ?>"><?= mb_ucfirst($addonPage['lname']) ?></a></li>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                <li<?= uri_string() == 'checkout' || uri_string() == MY_LANGUAGE_ABBR . '/checkout' ? ' class="active"' : '' ?>><a href="<?= LANG_URL . '/checkout' ?>"><?= lang('checkout') ?></a></li>
+                                <li<?= uri_string() == 'shopping-cart' || uri_string() == MY_LANGUAGE_ABBR . '/shopping-cart' ? ' class="active"' : '' ?>><a href="<?= LANG_URL . '/shopping-cart' ?>"><?= lang('shopping_cart') ?></a></li>
+                                <li<?= uri_string() == 'contacts' || uri_string() == MY_LANGUAGE_ABBR . '/contacts' ? ' class="active"' : '' ?>><a href="<?= LANG_URL . '/contacts' ?>"><?= lang('contacts') ?></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col-sm-6 col-md-5 col-lg-5">
+                                <div class="input-group" id="adv-search">
+                                    <input type="text" value="<?= isset($_GET['search_in_title']) ? $_GET['search_in_title'] : '' ?>" id="search_in_title" class="form-control" placeholder="<?= lang('search_by_keyword_title') ?>" />
+                                    <div class="input-group-btn">
+                                        <div class="btn-group" role="group">
+                                            <div class="dropdown dropdown-lg">
+                                                <button type="button" class="button-more dropdown-toggle mine-color" data-toggle="dropdown" aria-expanded="false"><?= lang('more') ?> <span class="caret"></span></button>
+                                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <form class="form-horizontal" method="GET" action="<?= isset($vendor_url) ? $vendor_url : LANG_URL ?>" id="bigger-search">
+                                                        <input type="hidden" name="category" value="<?= isset($_GET['category']) ? htmlspecialchars($_GET['category']) : '' ?>">
+                                                        <input type="hidden" name="in_stock" value="<?= isset($_GET['in_stock']) ? htmlspecialchars($_GET['in_stock']) : '' ?>">
+                                                        <input type="hidden" name="search_in_title" value="<?= isset($_GET['search_in_title']) ? htmlspecialchars($_GET['search_in_title']) : '' ?>">
+                                                        <input type="hidden" name="order_new" value="<?= isset($_GET['order_new']) ? htmlspecialchars($_GET['order_new']) : '' ?>">
+                                                        <input type="hidden" name="order_price" value="<?= isset($_GET['order_price']) ? htmlspecialchars($_GET['order_price']) : '' ?>">
+                                                        <input type="hidden" name="order_procurement" value="<?= isset($_GET['order_procurement']) ? htmlspecialchars($_GET['order_procurement']) : '' ?>">
+                                                        <input type="hidden" name="brand_id" value="<?= isset($_GET['brand_id']) ? htmlspecialchars($_GET['brand_id']) : '' ?>">
+                                                        <div class="form-group">
+                                                            <label for="quantity_more"><?= lang('quantity_more_than') ?></label>
+                                                            <input type="text" value="<?= isset($_GET['quantity_more']) ? htmlspecialchars($_GET['quantity_more']) : '' ?>" name="quantity_more" id="quantity_more" placeholder="<?= lang('type_a_number') ?>" class="form-control">
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="added_after"><?= lang('added_after') ?></label>
+                                                                    <div class="input-group date">
+                                                                        <input type="text" value="<?= isset($_GET['added_after']) ? htmlspecialchars($_GET['added_after']) : '' ?>" name="added_after" id="added_after" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="added_before"><?= lang('added_before') ?></label>
+                                                                    <div class="input-group date">
+                                                                        <input type="text" value="<?= isset($_GET['added_before']) ? htmlspecialchars($_GET['added_before']) : '' ?>" name="added_before" id="added_before" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="search_in_body"><?= lang('search_by_keyword_body') ?></label>
+                                                            <input class="form-control" value="<?= isset($_GET['search_in_body']) ? htmlspecialchars($_GET['search_in_body']) : '' ?>" name="search_in_body" id="search_in_body" type="text" />
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="price_from"><?= lang('price_from') ?></label>
+                                                                    <input type="text" value="<?= isset($_GET['price_from']) ? htmlspecialchars($_GET['price_from']) : '' ?>" name="price_from" id="price_from" class="form-control" placeholder="<?= lang('type_a_number') ?>">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="price_to"><?= lang('price_to') ?></label>
+                                                                    <input type="text" name="price_to" value="<?= isset($_GET['price_to']) ? htmlspecialchars($_GET['price_to']) : '' ?>" id="price_to" class="form-control" placeholder="<?= lang('type_a_number') ?>">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-inner-search">
+                                                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                                        </button>
+                                                        <a class="btn btn-default" id="clear-form" href="javascript:void(0);"><?= lang('clear_form') ?></a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <button type="button" onclick="submitForm()" class="btn-go-search mine-color">
+                                                <img src="<?= base_url('template/imgs/search-ico.png') ?>" alt="Search">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
 
 
         <div id="wrapper">
@@ -173,6 +309,8 @@ foreach ($all_categories as $categorie) {
 
 
 
+
+
 <!--TEST Vendor Sign UP Form Modal-->
         <div class="cd-user-modal" style="z-index: 100">
             <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
@@ -181,6 +319,7 @@ foreach ($all_categories as $categorie) {
         <li><a href="#0">Vendor Register</a></li>
       </ul>
             <div id="content">
+                <?php if ($multiVendor == 1) { ?>
                     <div id="top-user-panel">
                         <div class="container">
                             <h1>Signup to become a FPVLife Seller!</h1><br>
@@ -198,11 +337,13 @@ foreach ($all_categories as $categorie) {
                             </form> 
                         </div>
                     </div>
-                    <div class="container cd-signup"><a href="<?= LANG_URL . '/vendor/register' ?>" class="btn btn-default"><?= lang('register_me') ?></a></div>
+                    <div class="cd-signup"><a href="<?= LANG_URL . '/vendor/register' ?>" class="btn btn-default"><?= lang('register_me') ?></a></div>
+                <?php } ?>
             </div>
         </div>
     </div>
 </div>
+
 
 
 
@@ -393,8 +534,9 @@ if (count($sliderProducts) > 0) {
 
 
 
+
 <!--TESTING Product Display Cards-->
-<div class="container-fp hide-on-desktop">
+<div class="container-fp">
         <?php
             if (!empty($products)) {
                 $load::getProducts($products, 'card', false);
@@ -409,7 +551,7 @@ if (count($sliderProducts) > 0) {
             }
         ?>
 </div>
-<br><br>
+
 
 
 
@@ -430,7 +572,7 @@ if (count($sliderProducts) > 0) {
             ?>
 </section>
 <!--//END Codepen Product Swiper//-->
-
+<br>
 
 
 <!--Codepen Product Slider-->

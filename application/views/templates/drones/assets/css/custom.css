@@ -47,13 +47,13 @@ div#checkout-page {
 
 @font-face {
   font-family: haloween;
-  src: url(<?= base_url('templatecss/fof.ttf') ?>);
+  src: url(fof.ttf);
 }
 *{box-sizing: border-box;transition: 0.2s ease all;}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background: #f3f3f3;
+    background: #f1f1f1;
 }
 
 /* Formatting search box */
@@ -599,6 +599,7 @@ xsigin/signup popup
 .navbar li a {border-radius : 10px;color: #00b8ff;display : block;font-family : arial;font-size : 13px;font-style : normal;font-weight : bold;margin : 0;moz-border-radius : 10px;padding : 6px 20px 6px 20px;padding : 8px 12px;text-decoration : none;/* text-shadow : 2px 2px 3px #000000; */webkit-border-radius : 10px;}
 .navbar .active a, .navbar li:hover a {background : #0399D4;background : linear-gradient(top, #EBEBEB, #A1A1A1);background : -moz-linear-gradient(top, #EBEBEB, #A1A1A1);background : -ms-linear-gradient(top, #EBEBEB, #A1A1A1);background: -webkit-gradient(linear, left top, left bottom, from(#ff8c15), to(#ffa90b));box-shadow : 0 1px 1px rgba(0, 0, 0, .2);color : #3B3944;moz-box-shadow : 0 1px 1px rgba(0, 0, 0, .2);text-shadow : 2px 2px 3px #FFFFFF;webkit-box-shadow : 0 1px 1px rgba(0, 0, 0, .2);}
 #adv-search {background-color : #f1f0ee;border-bottom-left-radius : 3px;border-top-left-radius : 3px;/* box-shadow : 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2); */moz-border-radius : 10px;moz-box-shadow : 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);padding : 10px;webkit-border-radius : 10px;webkit-box-shadow : 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);}
+#search_in_title {background-color : #fff;border : 0 none;border-radius : 3px 0 0 3px;font : bold 15px "lucida sans","trebuchet MS","Tahoma";height : 40px;padding : 10px 5px;border-radius: 2rem;padding-left: 1rem;margin-right: 14rem;}
 .button-more, .btn-go-search { border : 0 none; border-radius : 0; color : #fff; cursor : pointer; float : right; font : bold 15px/40px "lucida sans","trebuchet MS","Tahoma"; height : 40px; overflow : visible; position : relative; text-shadow : 0 -1px 0 rgba(0, 0, 0, 0.3); text-transform : uppercase; width : 100%; }
 .button-more::before { border-style : solid solid solid none; border-width : 8px 8px 8px 0; content : ""; left : -6px; position : absolute; top : 12px; }
 .btn-go-search { border-bottom-right-radius : 3px; border-top-right-radius : 3px; }
