@@ -1,12 +1,16 @@
 <p align="center"><img src="https://codeigniter.com/assets/images/ci-logo-big.png"></p>
 <p align="center">Shopping Cart Solution - CodeIgniter and Bootstrap</p>
  
-## Bootsrap Responsive Multi-Vendor, MultiLanguage Online Shop Platform
+## Bootstrap Responsive Multi-Vendor, MultiLanguage Online FPV Drone Marketplace
 
 Current versions:
 
 * Codeigniter 3.1.11
 * Bootstrap 3.3.7
+
+## The site is live:
+
+FPV Life: https://fpv-web.000webhostapp.com/
 
 ## Donate
 If this project help you reduce time to develop, you can give me a cup of coffee to continue its development. Thank you! :)
